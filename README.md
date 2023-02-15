@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/badge/Rode%20Clone-Deployed-green)
 
-[Live Link](https://ritesh-dance-landing-page.netlify.app/)
+[Live Link](https://rode-clone-rg.netlify.app/)
 
 ![](./ss/Screenshot%20-%20Rode%20Clone%20-%20127.0.0.1.png)
 
