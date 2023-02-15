@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//db.onlinewebfonts.com/c/ad26818d844de4534fd78bb03028ca79?family=Shopify+Sans+Web+Medium" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="./assets/images/rode-favicon.svg">
+    <script src="https://kit.fontawesome.com/e2c3d0106a.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'headbgcolor' : '#fbf7ed',
+                'headerbtncolor' : '#008060',
+              }
+            }
+          }
+        }
+    </script>
+    <title>Rode Clone</title>
+    <!-- <style>
+      @media screen and (min-width:1024px) {
+        .hero-banner-1,
+
+        .hero-1-img{
+          background-image: url("./assets/images/image1.jpg");
+          background-size: cover;
+          background-position: center;
+          height: 100%;
+        }
+        
+      }
+    </style> -->
+</head>
+<body class="font-roboto bg-white overflow-x-hidden">
+    <!-- Header Section -->
+    <header class="bg-white">
+      <div class="hidden px-4 md:px-20 py-2 lg:flex flex-row justify-between items-center">
+        <div class="flex flex-row justify-between gap-1 items-center">
+          <img src="./assets/images/location.png" class="h-[18px]" alt="">
+          <p class="text-sm text-gray-500">EN</p>
+          <img src="./assets/images/drop.png" class="h-[4px] invert-[100%]" alt="">
+        </div>
+        <div class="flex flex-row gap-2 items-center">
+          <div>
+            <svg data-v-49b37e2d="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 219.5 75" xml:space="preserve" height="16px" class="rodexLogo hasHoverEffect cursor-pointer">
+              <g data-v-49b37e2d="" class=""><polygon data-v-49b37e2d="" points="190.7,37.5 162,75 136.4,75 165.2,37.5 136.4,0 162,0 190.7,37.5" class="fillColor1"></polygon> 
+              <polygon data-v-49b37e2d="" points="194.9,32.1 219.5,0 193.9,0 182.1,15.4 194.9,32.1" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="182.1,59.6 193.9,75 219.5,75 194.9,42.9 182.1,59.6" class="fillColor1"></polygon> <path data-v-49b37e2d="" d="M62.4,32.8c0.2,1.8,0.3,3.5,0.3,4.7c0,4.5-0.8,14.9-8.3,14.9c-3.4,0-5.4-2.2-6.6-5L62.4,32.8L62.4,32.8z
+              M54.4,22.6c3.5,0,5.5,2.3,6.7,5.2L46.4,42.4c-0.3-1.9-0.3-3.6-0.3-4.9C46.1,33,46.9,22.6,54.4,22.6L54.4,22.6z M73.9,21.3
+              l-3.1-3.1L66.9,22c-3.4-2.7-7.7-4.3-12.5-4.3c-11.2,0-19.9,8.7-19.9,19.8c0,4.8,1.6,9.1,4.4,12.5L35,53.8l3.1,3.1l3.8-3.8
+              c3.4,2.6,7.6,4.1,12.4,4.1c11.2,0,19.9-8.7,19.9-19.8c0-4.7-1.6-9-4.3-12.4L73.9,21.3L73.9,21.3z M103,36.7c0,7-2.8,14.4-10.6,14.4
+              h-3.8V23.9H92C99.6,23.9,103,30.3,103,36.7L103,36.7z M94.5,18.7H77.8v37.5h18.3c11.2,0,18.5-7.1,18.5-18.1
+              C114.6,26.9,106.1,18.7,94.5,18.7L94.5,18.7z M142.6,50.3v6h-24.9V18.7h25v6h-13.7V34h12.3v6h-12.3v10.3H142.6L142.6,50.3z
+              M11.3,24.2h3.3c3.6,0,6.1,2.5,6.1,6.2c0,5.3-3,6.3-8.2,6.3h-1.2V24.2L11.3,24.2z M32.3,30.2c0-7.1-7-11.4-13.5-11.4H0v37.5h11.3
+              V38.1L20,56l0.1,0.3h12.8L24,40.5C29.2,39,32.3,35.1,32.3,30.2L32.3,30.2z" class="fill-current fill-gray-500 hover:fill-red-500"></path></g></svg>
+          </div>
+          <img src="./assets/images/profile.png" class="w-[20px]" alt="">
+        </div>
+      </div>
+      <div class="hidden lg:block border-b-2 border-gray-200 font-bold"></div>
+    </header>
+    
+    <!-- Main Header Section -->
+    <section class="sticky top-0 z-50 px-4 md:px-20 py-6 bg-white">
+      <div class="flex flex-row justify-between items-center">
+        <div class="">
+          <svg version="1.1" id="Rode_Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 792.9 220.2" xml:space="preserve" style="height: 24px;">
+            <g>
+              <path d="M179.8,69.2c0-39.4-38.8-63.6-74.9-63.6H0v208.7h62.8V113.4l48.4,99.2l0.8,1.5h71.3l-49.8-87.8
+            C162.2,118.2,179.8,96.5,179.8,69.2z M62.8,35.8h18.4c20,0,34,14.2,34,34.4c0,29.2-16.7,35-45.7,35h-6.9V35.8H62.8z">
+              </path>
+              <polygon points="717,181.1 717,123.8 785.4,123.8 785.4,90.5 717,90.5 717,39 789,39 789,5.6 654.3,5.6 654.3,214.3 792.9,214.3 
+            792.9,181.1 	"></polygon>
+              <path d="M525.4,5.6H433v208.7h101.9c62.5,0,102.8-39.4,102.8-100.5C637.4,51.1,590.3,5.6,525.4,5.6z M572.6,105.5
+            c0,38.8-15.4,80.1-58.8,80.1h-20.9V34.2h18.8C553.8,34.2,572.6,70,572.6,105.5z"></path>
+              <path d="M410.8,19.6L393.3,2.1l-21.5,21.5C353,8.9,328.8,0,302.3,0C240,0,191.4,48.3,191.4,110c0,26.7,9.2,50.9,24.6,69.8
+            l-21.1,21.1l17.5,17.5l21.3-21.3c18.8,14.4,42.5,23.1,68.6,23.1c62.3,0,110.9-48.2,110.9-109.9c0-26.3-8.8-50.2-23.8-68.8
+            L410.8,19.6z M302.4,27.3c19.4,0,30.7,12.7,37.3,28.6l-81.5,81.5c-1.5-10.4-1.9-20.4-1.9-27.5C256.3,85.2,260.9,27.3,302.4,27.3z
+             M346.6,83.8c1.3,10,1.7,19.2,1.7,26.1c0,24.8-4.4,82.6-46.1,82.6c-19,0-30.2-12.1-36.9-27.7L346.6,83.8z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div class="text-[16px] hidden lg:block">
+          <nav class="flex flex-row gap-8 text-gray-700 font-medium list-none">
+            <li class="cursor-pointer">
+              <a href="">PRODUCTS</a>
+            </li>
+            <li class="cursor-pointer">
+              <a href="">USER GUDIES</a>
+            </li>
+            <li class="cursor-pointer">
+              <a href="">SOLUTIONS</a>
+            </li>
+            <li class="cursor-pointer">
+              <a href="">APPAREL</a>
+            </li>
+            <li class="cursor-pointer">
+              <a href="">SUPPORT</a>
+            </li>
+          </nav>
+        </div>
+        <div class="">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+
+        <div class="lg:hidden flex flex-row items-center">
+          <button class="p-4 lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:black">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Hero Banner 1 -->
+    <section class="lg:h-[600px] xl:h-[700px]">
+      <div class="bg-none lg:bg-[url('./assets/images/image1.jpg')] flex flex-col lg:flex-row  text-white lg:h-[700px]  bg-cover  bg-center bg-no-repeat  items-center">
+          <div class="lg:hidden flex-[.5] lg:w-fit lg:h-fit bg-black  w-[100%] overflow-hidden mx-auto">
+             <img class=" object-cover oh-[670px] mx-auto " src="./assets/images/image1-mobile.jpg" alt="">
+          </div>
+          <div class="py-6 lg:py-0 flex-[.5] flex flex-col items-center bg-black lg:bg-transparent w-full lg:w-fit ">
+             <div class="text-center flex flex-col  items-center w-[100%]  lg:w-[450px] xl:w-[550px] lg:mr-[30px] xl:mr-[200px] mb-10 lg:mb-0">
+              <img class="mb-7 mx-[15px] lg:mx-0" src="https://edge.rode.com/images/page/1/modules/7160/NTH-100M_PL_PI_02.svg">
+              <h3 class="text-[1.6rem] mb-2">
+                Hear and Be Heard With Incredible Audio
+              </h3>
+              <p class="text-center text-[hsla(0,0%,100%,.5)] px-[30px] sm:px-[100px] lg:px-[18px] xl:px-[30px] text-[17px]">
+                The NTH-100M is a professional over-ear headset that combines the exceptional sonic performance and comfort of the award-winning NTH-100 headphones with a broadcast-quality headset microphone.
+              </p>
+             <div class="font-[600] flex gap-3 text-[17px] mt-[50px]">
+              <button class="text-[#ad996f]">
+                  LEARN MORE 
+                  <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <button class="bg-[#ad9970] py-1 px-5 rounded-2xl ">
+                  BUY NOW
+              </button>
+             </div>
+             </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Hero Banner 2 -->
+    <section class="lg:h-[600px] xl:h-[700px]">
+      <div class="bg-none lg:bg-[url('./assets/images/vmgoii-homepage-banner-2.png')] flex flex-col lg:flex-row  text-white lg:h-[700px]  bg-cover  bg-center bg-no-repeat  items-center">
+          <div class="flex-[.5] lg:w-fit lg:h-fit bg-white  w-[100%] overflow-hidden mx-auto">
+             <img class="lg:hidden object-cover oh-[670px] mx-auto " src="./assets/images/image2-mobile.jpg" alt="">
+          </div>
+          <div class="py-6 lg:py-0 flex-[.5] flex flex-col items-center bg-white lg:bg-transparent w-full lg:w-fit ">
+             <div class="text-center flex flex-col  items-center w-[100%]  lg:w-[450px] xl:w-[550px] lg:mr-[30px] xl:mr-[200px] mb-10 lg:mb-0">
+              <img class="mb-7 mx-[15px] lg:mx-0" src="./assets/images/VideoMicroII_PL_P_03.svg">
+              <h3 class="text-[1.6rem] mb-2 text-black">
+                Small Size. Stunning Sound.
+              </h3>
+              <p class="text-center text-black lg:text-[hsla(0,0%,100%,.5)] px-[30px] sm:px-[100px] lg:px-[18px] xl:px-[30px] text-[17px]">
+                The VideoMicro II is an ultra-compact and easy-to-use microphone that will instantly elevate your camera or smartphone audio, perfect for filmmaking, content creation, home videos, and more.
+              </p>
+             <div class="font-[600] flex gap-3 text-[17px] mt-[50px]">
+              <button class="text-[#ad996f]">
+                  LEARN MORE 
+                  <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <button class="bg-[#ad9970] py-1 px-5 rounded-2xl ">
+                  BUY NOW
+              </button>
+             </div>
+             </div>
+          </div>
+      </div>
+    </section>
+
+     <!-- Hero Banner 3 -->
+     <section class="lg:h-[600px] xl:h-[700px]">
+      <div class="bg-none lg:bg-[url('./assets/images/ntusbplus-homepage-banner-3.jpg')] flex flex-col lg:flex-row  text-white lg:h-[700px]  bg-cover  bg-center bg-no-repeat  items-center">
+          <div class="lg:hidden flex-[.5] lg:w-fit lg:h-fit bg-black  w-[100%] overflow-hidden mx-auto">
+             <img class="object-cover oh-[670px] mx-auto " src="./assets/images/image3-mobile.jpg" alt="">
+          </div>
+          <div class="py-6 lg:py-0 flex-[.5] flex flex-col items-center bg-black lg:bg-transparent w-full lg:w-fit ">
+             <div class="text-center flex flex-col  items-center w-[100%]  lg:w-[450px] xl:w-[550px] lg:mr-[30px] xl:mr-[200px] mb-10 lg:mb-0">
+              <img class="mb-7 mx-[15px] lg:mx-0" src="./assets/images/NT-USB+_PL_PI_01-02.svg">
+              <h3 class="text-[1.6rem] mb-2 text-white">
+                Sound Like a Pro
+              </h3>
+              <p class="text-center text-white lg:text-[hsla(0,0%,100%,.5)] px-[30px] sm:px-[100px] lg:px-[18px] xl:px-[30px] text-[17px]">
+                The NT-USB+ is a professional USB microphone with next-generation features that make it easy for anyone to capture pristine, studio-quality audio – from musicians to podcasters.
+              </p>
+             <div class="font-[600] flex gap-3 text-[17px] mt-[50px]">
+              <button class="text-[#ad996f]">
+                  LEARN MORE 
+                  <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <button class="bg-[#ad9970] py-1 px-5 rounded-2xl ">
+                  BUY NOW
+              </button>
+             </div>
+             </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Hero Banner 4 -->
+    <section class="lg:h-[600px] xl:h-[700px]">
+      <div class="bg-none lg:bg-[url('./assets/images/RODEX_Launch-Website-Banners__4.jpg')] flex flex-col lg:flex-row  text-white lg:h-[700px]  bg-cover  bg-center bg-no-repeat  items-center">
+          <div class="lg:hidden flex-[.5] lg:w-fit lg:h-fit bg-black  w-[100%] overflow-hidden mx-auto">
+             <img class="object-cover oh-[670px] mx-auto " src="./assets/images/image4-mobile.jpg" alt="">
+          </div>
+          <div class="mx-auto py-6 lg:py-0 flex-[.5] flex flex-col items-center bg-black lg:bg-transparent w-full lg:w-fit ">
+              <div class="text-center flex flex-col  items-center w-[100%]  lg:w-[450px] xl:w-[550px] mb-10 lg:mb-0">
+               <img class="mb-7 mx-[15px] lg:mx-0" src="./assets/images/RODEX_Launch-Website-Banners_COPY-04.svg">
+              <div class="font-[600] flex gap-3 text-[17px] mt-[50px]">
+              <div>
+                <button class="text-black bg-red-500 px-8 py-2 rounded-full">
+                  <p class="uppercase font-bold">Learn More</p>
+                </button>
+              </div>
+             </div>
+             </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Hero Banner 5 -->
+    <section class="lg:h-[600px] xl:h-[700px]">
+      <div class="bg-none lg:bg-[url('./assets/images/rode-rodecaster-pro-II-home-page-banner-5-rgb.jpg')] flex flex-col lg:flex-row  text-white lg:h-[700px]  bg-cover  bg-center bg-no-repeat  items-center">
+          <div class="flex-[.5] lg:w-fit lg:h-fit bg-black  w-[100%] overflow-hidden mx-auto">
+             <img class="lg:hidden object-cover oh-[670px] mx-auto " src="./assets/images/image5-mobile.jpg" alt="">
+          </div>
+          <div class="py-6 lg:py-0 flex-[.5] flex flex-col items-center bg-black lg:bg-transparent w-full lg:w-fit ">
+             <div class="text-center flex flex-col  items-center w-[100%]  lg:w-[450px] xl:w-[550px] lg:mr-[30px] xl:mr-[200px] mb-10 lg:mb-0">
+              <img class="mb-7 mx-[15px] lg:mx-0" src="./assets/images/RODECasterProII_PL_PI_5.svg">
+              <h3 class="text-[1.6rem] mb-2 text-white">
+                The Revolution Is Here
+              </h3>
+              <p class="text-center text-white lg:text-[hsla(0,0%,100%,.5)] px-[30px] sm:px-[100px] lg:px-[18px] xl:px-[30px] text-[17px]">
+                The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level.
+              </p>
+             <div class="font-[600] flex gap-3 text-[17px] mt-[50px]">
+              <button class="text-[#ad996f]">
+                  LEARN MORE 
+                  <i class="fa-solid fa-angle-right"></i>
+              </button>
+              <button class="bg-[#ad9970] py-1 px-5 rounded-2xl ">
+                  BUY NOW
+              </button>
+             </div>
+             </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Banner 4 -->
+    <!-- <section class="bg-green-400">
+      <div style="background-image: url('/assets/images/RODEX_Launch-Website-Banners__4.jpg'); " class="w-full h-screen bg-no-repeat bg-cover bg-center z-0">
+        <div class="text-white flex flex-col gap-6 w-[50%] h-screen text-center px-4 my-auto flex flex-col justify-center items-center">
+          <div>
+            <img src="./assets/images/RODEX_Launch-Website-Banners_COPY-04.svg" class="w-[500px] z-1" alt="">
+          </div>
+          <button class="text-red-500 bg-black px-8 py-2 rounded-full">
+            <p class="uppercase font-bold">Learn More</p>
+          </button>
+        </div>
+      </div>
+    </section> -->
+    
+    <!-- Banner 5 -->
+    <!-- <section class="bg-green-400">
+      <div style="background-image: url('/assets/images/rode-rodecaster-pro-II-home-page-banner-5-rgb.jpg'); " class="w-full h-screen bg-no-repeat bg-cover bg-center">
+        <div class="pl-32">
+          <div class="text-white flex flex-col gap-6 w-[50%] h-screen text-center px-4 my-auto flex flex-col justify-center items-center">
+            <div>
+              <img alt="" class="title-image w-[500px]" data-src="https://edge.rode.com/images/page/1/modules/7160/NTH-100M_PL_PI_02.svg" src="./assets/images/RODECasterProII_PL_PI_5.svg">
+            </div>
+            <strong class="w-full text-3xl font-medium text-center">
+              The Revolution Is Here
+            </strong>
+            <p class="w-[90%] text-[16px] text-gray-400 font-medium px4">
+              The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level.
+            </p>
+            <div class="text-[#AD9970] flex flex-row gap-2 items-center justify-center">
+              <button class="flex flex-row gap-1 items-center justify-center text-xl font-bold">
+                <span class="uppercase text-[#AD9970] font-semibold">Learn More</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button class="text-white hover:text-[#AD9970] bg-[#AD9970] hover:bg-white px-6 py-2 border-[1px] border-[#AD9970] rounded-full">
+                <p class="uppercase font-bold">Buy Now</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- Middle Section -->
+    <section class="pt-20 mx-auto">
+      <h2 class="text-center font-medium text-3xl text-[#AD9970]">Learn From The RØDE Blog</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-center mt-6 bg-[#f8f9fa] px-4 md:px-20 py-12">
+        <!-- Mid Section 1 -->
+        <div class="flex flex-col gap-4 w-full bg-white text-center">
+          <h2 class="pt-4 font-medium text-2xl">Introducing the NTH-100M Professional Over-ear Headset</h2>
+          <img src="./assets/images/middle-section-image-1.jpg" alt="">
+          <p class="pt-2 px-3 text-lg">The NTH-100M is a professional over-ear headset that combines our award-winning NTH-100 headphones with a broadcast-quality microphone.</p>
+          <div class="pt-4 pb-8">
+            <button class="text-white hover:text-[#AD9970] bg-[#AD9970] hover:bg-white px-6 py-2 border-[1px] border-[#AD9970] rounded-full">
+              <p class="uppercase font-bold">learn more</p>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Mid Section 2 -->
+        <div class="flex flex-col gap-4 w-full bg-white text-center">
+          <h2 class="pt-4 font-medium text-2xl">RØDECaster Pro II Firmware 1.1.1 Introduces Advanced Sub-mixing and More</h2>
+          <img src="./assets/images/middle-section-image-2.jpg" alt="">
+          <p class="px-3 pt-2 text-lg">The latest major firmware update for the RØDECaster Pro II introduces advanced sub-mixing and other enhancements for a flexible workflow.</p>
+          <div class="pt-4 pb-8">
+            <button class="text-white hover:text-[#AD9970] bg-[#AD9970] hover:bg-white px-6 py-2 border-[1px] border-[#AD9970] rounded-full">
+              <p class="uppercase font-bold">learn more</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mid Section 3 -->
+        <div class="flex flex-col gap-4 w-full bg-white text-center">
+          <h2 class="pt-4 font-medium text-2xl">Introducing New Wireless GO II Firmware: Camera Presets, Nested Recordings and More</h2>
+          <img src="./assets/images/middle-section-image-3.jpg" alt="">
+          <p class="pt-2 text-lg">Here’s everything you need to know about the new Wireless GO II and RØDE Central updates</p>
+          <div class="px-3 pt-4 pb-8">
+            <button class="text-white hover:text-[#AD9970] bg-[#AD9970] hover:bg-white px-6 py-2 border-[1px] border-[#AD9970] rounded-full">
+              <p class="uppercase font-bold">learn more</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mid Section 4 -->
+        <div class="flex flex-col gap-4 w-full bg-white text-center">
+          <h2 class="pt-4 font-medium text-2xl">How to Use VideoMicro II with an iPhone or Android Smartphone</h2>
+          <img src="./assets/images/middle-section-image-4.jpg" alt="">
+          <p class="pt-2 text-lg">In this article we take a look at how to mount and connect your VideoMicro II to your smartphone</p>
+          <div class="px-3 pt-4 pb-8">
+            <button class="text-white hover:text-[#AD9970] bg-[#AD9970] hover:bg-white px-6 py-2 border-[1px] border-[#AD9970] rounded-full">
+              <p class="uppercase font-bold">learn more</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Avalaible Items -->
+    <section class="text-center px-4 md:px-20">
+      <h2 class="py-8 text-[#AD9970] font-medium text-3xl">Explore The RØDE Range</h2>
+      <!-- Headphone -->
+      <div>
+        <div class="my-6 relative flex flex-col justify-center items-center">
+            <a href="#" class="absolute top-0 w-full h-full hover:bg-[#484848] opacity-25 ease-in-out delay-100">
+                <a class="cursor-pointer">
+                    <img src="./assets/images/Microphones-bg-image.png" alt="">
+                </a>
+            </a>
+            <a href="#" class="absolute">
+                <h1 class="lg:text-7xl md:text-5xl text-2xl text-white uppercase font-semibold">microphones</h1>
+            </a>
+        </div>
+      </div>
+
+      <!-- Headphone -->
+      <div>
+        <div class="my-6 relative flex flex-col justify-center items-center">
+            <a href="#" class="absolute top-0 w-full h-full hover:bg-[#484848] opacity-25 ease-in-out delay-100">
+                <a class="cursor-pointer">
+                    <img src="./assets/images/interface=bg-image.jpg" alt="">
+                </a>
+              </a>
+            <a href="#" class="absolute">
+                <h1 class="lg:text-7xl md:text-5xl text-2xl text-white uppercase font-semibold">
+                    interfaces & mixers
+                </h1>
+            </a>
+        </div>
+      </div>
+
+      <!-- Software -->
+      <div>
+        <div class="my-6 relative flex flex-col justify-center items-center">
+            <a href="#"
+                class="absolute top-0 w-full h-full hover:bg-[#484848] opacity-25 transition ease-in-out delay-100">
+                <a class="cursor-pointer">
+                    <img src="./assets/images/Software-bg-image.png" alt="">
+                </a>
+            </a>
+            <a href="#" class="absolute">
+                <h1 class="lg:text-7xl lg:text-6xl md:text-5xl text-2xl text-white uppercase font-semibold">software</h1>
+            </a>
+        </div>
+    </div>
+
+    <!-- Accesories -->
+    <div>
+        <div class="my-6 relative flex flex-col justify-center items-center">
+            <a href="#" class="absolute top-0 w-full h-full hover:bg-[#484848] opacity-25 ease-in-out delay-100">
+                <a class="cursor-pointer">
+                    <img src="./assets/images/Accesories-bg-image.png" alt="">
+                </a>
+            </a>
+            <a href="#" class="absolute">
+                <h1 class="xl:text-7xl lg:text-6xl md:text-5xl text-2xl text-white uppercase font-semibold">
+                    accessories</h1>
+            </a>
+        </div>
+    </div>      
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="bg-white">
+
+    <div class="border-b py-14 hidden md:block"></div>
+
+    <div class="max-w-[1140px] py-14 md:px-14 px-3.5 xl:px-3.5 mx-auto">
+
+        <div class="wrapper md:grid md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 lg:space-x-8">
+
+            <div
+                class="w-[30%] mx-auto md:w-fit md:col-span-3 lg:col-span-1 xl:col-span-2 lg:place-self-start md:place-self-center md:mb-8">
+                <img src="./assets/images/footer-logo.svg" alt="">
+            </div>
+
+            <div class="hidden md:block md:col-span-1 lg:col-span-1 xl:col-span-2">
+                <h2 class="title-font font-medium text-lg">Products</h2>
+                <nav class="list-none mb-10">
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Microphones</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Headphones</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Interfaces and Mixers</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Accessories</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Software</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Apparel</a>
+                    </li>
+                </nav>
+            </div>
+
+            <div class="hidden md:block md:col-span-1 lg:col-span-1 xl:col-span-2">
+                <h2 class="title-font font-medium text-lg">Support</h2>
+                <nav class="list-none mb-10">
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Contact RØDE</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Service Centre</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Warranty</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Where to Buy</a>
+                    </li>
+                </nav>
+            </div>
+
+            <div class="hidden md:block md:col-span-1 lg:col-span-1 xl:col-span-2">
+                <h2 class="title-font font-medium text-lg">Company</h2>
+                <nav class="list-none mb-3">
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">About RØDE</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">News and Info</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Job Opportunities</a>
+                    </li>
+                </nav>
+
+                <h2 class="title-font font-medium text-lg">Account</h2>
+                <nav class="list-none">
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Manage your Account</a>
+                    </li>
+                    <li class="mt-3">
+                        <a href="#" class="text-gray-800 hover:text-gray-800 ">Create Account</a>
+                    </li>
+                </nav>
+
+            </div>
+
+
+            <div class="bg-white text-gray-900 my-14 md:hidden">
+                <h2>
+                    <button type="button"class="flex items-center justify-between w-full py-5 font-semibold text-left text-gray-600 hover:text-gray-900 border-t border-gray-400 px-5">
+                        <span>Products</span>
+                        <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"clip-rule="evenodd"></path></svg>
+                    </button>
+                </h2>
+                <h2>
+                    <button type="button" class="flex items-center justify-between w-full py-5 font-semibold text-left text-gray-600 border-t border-gray-400 px-5">
+                        <span>Support</span>
+                        <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <h2>
+                    <button type="button" class="flex items-center justify-between w-full py-5 font-semibold text-left text-gray-600 border-t border-gray-400 px-5">
+                        <span>Company</span>
+                        <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </h2>
+                <h2>
+                    <button type="button" class="flex items-center justify-between w-full py-5 font-semibold text-left text-gray-600 border-t border-gray-400 px-5">
+                    <span>Account</span>
+                    <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                    </button>
+                </h2>
+            </div>
+
+            <div class="md:col-span-3 lg:col-span-2 xl:col-span-4 flex flex-col lg:items-end text-center md:mb-8">
+                <h2 class="title-font text-2xl lg:text-right font-semibold text-gray-800 capitalize">subscribe to our latest news and offers</h2>
+
+                <div class="py-6">
+                  <button class="text-white hover:text-[#AD9970] bg-[#AD9970] hover:bg-white px-6 py-2 border-[1px] border-[#AD9970] rounded-full">
+                    <p class="camel font-bold">Sign Up</p>
+                  </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer bottom -->
+
+        <div class="border-t pt-8 flex flex-col lg:flex-row items-center justify-between">
+
+            <p class="text-gray-700 text-sm lg:order-1 order-3">© 2022 RØDE All Rights Reserved.</p>
+
+            <a href="#" class="text-xs text-gray-500 lg:order-2">Privacy Policy 
+            <span class="mx-3"> | </span>Terms & Conditions
+            </a>
+
+            <div class="flex flex-row justify-between items-center xl:space-x-8 lg:space-x-5 md:space-x-20 space-x-5 lg:order-3 my-7 lg:my-0">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook text-mygold text-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-twitter text-mygold text-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram text-mygold text-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube text-mygold text-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok text-mygold text-2xl"></i>
+                </a>
+
+                <a href="#">
+                  <svg data-v-49b37e2d="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 219.5 75" xml:space="preserve" height="24px" class="rodexLogo"><g data-v-49b37e2d="" class="currentColor"><polygon data-v-49b37e2d="" points="190.7,37.5 162,75 136.4,75 165.2,37.5 136.4,0 162,0 190.7,37.5" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="194.9,32.1 219.5,0 193.9,0 182.1,15.4 194.9,32.1" class="fillColor1"></polygon> <polygon data-v-49b37e2d="" points="182.1,59.6 193.9,75 219.5,75 194.9,42.9 182.1,59.6" class="fillColor1"></polygon> <path data-v-49b37e2d="" d="M62.4,32.8c0.2,1.8,0.3,3.5,0.3,4.7c0,4.5-0.8,14.9-8.3,14.9c-3.4,0-5.4-2.2-6.6-5L62.4,32.8L62.4,32.8z
+                    M54.4,22.6c3.5,0,5.5,2.3,6.7,5.2L46.4,42.4c-0.3-1.9-0.3-3.6-0.3-4.9C46.1,33,46.9,22.6,54.4,22.6L54.4,22.6z M73.9,21.3
+                    l-3.1-3.1L66.9,22c-3.4-2.7-7.7-4.3-12.5-4.3c-11.2,0-19.9,8.7-19.9,19.8c0,4.8,1.6,9.1,4.4,12.5L35,53.8l3.1,3.1l3.8-3.8
+                    c3.4,2.6,7.6,4.1,12.4,4.1c11.2,0,19.9-8.7,19.9-19.8c0-4.7-1.6-9-4.3-12.4L73.9,21.3L73.9,21.3z M103,36.7c0,7-2.8,14.4-10.6,14.4
+                    h-3.8V23.9H92C99.6,23.9,103,30.3,103,36.7L103,36.7z M94.5,18.7H77.8v37.5h18.3c11.2,0,18.5-7.1,18.5-18.1
+                    C114.6,26.9,106.1,18.7,94.5,18.7L94.5,18.7z M142.6,50.3v6h-24.9V18.7h25v6h-13.7V34h12.3v6h-12.3v10.3H142.6L142.6,50.3z
+                    M11.3,24.2h3.3c3.6,0,6.1,2.5,6.1,6.2c0,5.3-3,6.3-8.2,6.3h-1.2V24.2L11.3,24.2z M32.3,30.2c0-7.1-7-11.4-13.5-11.4H0v37.5h11.3
+                    V38.1L20,56l0.1,0.3h12.8L24,40.5C29.2,39,32.3,35.1,32.3,30.2L32.3,30.2z" class="fillColor2"></path></g></svg>
+                </a>
+
+            </div>
+
+        </div>
+
+</footer>
+</body>
+</html>
